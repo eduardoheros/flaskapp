@@ -7,6 +7,7 @@ app = Flask(__name__)
 #app.config["DEBUG"]=True
 #app.config.from_envvar("APP_SETTINGS")
 app.config["STRIPE_KEY"]=environ.get("STRIPE_API_KEY")
+app.config["USUARIO"]=environ.get("USUARIO_MASTER")
 
 # Define recipes list
 recipes = [
